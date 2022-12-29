@@ -1,0 +1,54 @@
+:root {
+  --cbx-text-editor-font-size: inherit;
+  --cbx-text-editor-font-weight: inherit;
+  --cbx-text-editor-border-width: 1px;
+  --cbx-text-editor-height: 250px;
+  --cbx-text-editor-margin: 16px;
+  --cbx-text-editor-padding: 8px;
+  --cbx-text-editor-button-bg-color: transparent;
+  --cbx-text-editor-button-size: 28px;
+  --cbx-text-editor-button-icon-size: 20px;
+  --cbx-text-editor-button-margin: 2px;
+  --cbx-text-editor-button-border-radius: 2px;
+  .light-vars({
+    --cbx-text-editor-text-color: #000;
+    --cbx-text-editor-bg-color: #fff;
+    --cbx-text-editor-border-color: rgba(0,0,0,0.1);
+    --cbx-text-editor-toolbar-bg-color: #fff;
+    --cbx-text-editor-button-text-color: #333;
+    --cbx-text-editor-button-divider-color: rgba(0,0,0,0.15);
+    --cbx-text-editor-placeholder-color: rgba(0,0,0,0.35);
+  });
+  .dark-vars({
+    --cbx-text-editor-bg-color: #121212;
+    --cbx-text-editor-border-color: rgba(255,255,255,0.1);
+    --cbx-text-editor-toolbar-bg-color: #202020;
+    --cbx-text-editor-text-color: #fff;
+    --cbx-text-editor-placeholder-color: rgba(255,255,255,0.35);
+    --cbx-text-editor-button-text-color: #fff;
+    --cbx-text-editor-button-divider-color: rgba(255,255,255,0.15);
+  });
+}
+.ios-vars({
+  --cbx-text-editor-toolbar-padding: 6px;
+  .light-vars({
+    --cbx-text-editor-toolbar-border-color: rgba(0,0,0,0.25);
+  });
+  .dark-vars({
+    --cbx-text-editor-toolbar-bg-color: #121212;
+    --cbx-text-editor-toolbar-border-color: rgba(255,255,255,0.1);
+  });
+});
+.md-vars({
+  --cbx-text-editor-toolbar-padding: 8px;
+  --cbx-text-editor-toolbar-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.25);
+});
+.aurora-vars({
+  --cbx-text-editor-toolbar-padding: 8px;
+  .light-vars({
+    --cbx-text-editor-toolbar-border-color: rgba(0,0,0,0.25);
+  });
+  .dark-vars({
+    --cbx-text-editor-toolbar-border-color: rgba(255,255,255,0.1);
+  });
+});

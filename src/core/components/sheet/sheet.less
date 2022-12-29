@@ -1,0 +1,195 @@
+/* === Sheet Modal === */
+@import './sheet-vars.less';
+.sheet-backdrop {
+  z-index: 11000;
+  &-unique {
+    z-index: 12500;
+  }
+}
+.sheet-modal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--cbx-sheet-height);
+  display: none;
+  box-sizing: border-box;
+  transition-property: transform;
+  transform: translate3d(0, 100%, 0);
+  background: var(--cbx-sheet-bg-color);
+  z-index: 12500;
+  will-change: transform, opacity;
+  &.modal-in,
+  &.modal-out {
+    transition-duration: var(--cbx-sheet-transition-duration);
+  }
+  &.not-animated {
+    transition-duration: 0ms;
+  }
+  &.modal-in {
+    display: block;
+    transform: translate3d(0, 0, 0);
+  }
+  &.modal-in-swipe-step {
+    display: block;
+    transform: translate3d(0, var(--cbx-sheet-swipe-step, 0), 0);
+  }
+  &.modal-out {
+    transform: translate3d(0, 100%, 0);
+  }
+  .sheet-modal-inner {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .toolbar {
+    --cbx-safe-area-bottom: 0px;
+    position: relative;
+    width: 100%;
+    &:after,
+    &:before {
+      display: none;
+    }
+    + .sheet-modal-inner {
+      height: calc(100% - var(--cbx-toolbar-height));
+      .page-content {
+        --cbx-page-toolbar-top-offset: 0px;
+        --cbx-page-toolbar-bottom-offset: 0px;
+      }
+    }
+  }
+}
+.sheet-modal-top {
+  .hairline(bottom, var(--cbx-sheet-border-color));
+  &:after {
+    z-index: 700;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+}
+.sheet-modal-bottom,
+.sheet-modal:not(.sheet-modal-top) {
+  --cbx-safe-area-top: 0px;
+  .hairline(top, var(--cbx-sheet-border-color));
+  &:before {
+    z-index: 700;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+}
+.sheet-modal-top {
+  --cbx-safe-area-bottom: 0px;
+  bottom: auto;
+  top: 0;
+  transform: translate3d(0, -100%, 0);
+  &.modal-out {
+    transform: translate3d(0, -100%, 0);
+  }
+  .toolbar-bottom {
+    position: absolute;
+  }
+  .page-content {
+    padding-top: var(--cbx-safe-area-top);
+  }
+}
+
+html.with-modal-sheet-push,
+html.with-modal-sheet-push-closing {
+  .sheet-modal-push {
+    --cbx-sheet-border-color: transparent;
+    border-radius: var(--cbx-sheet-push-border-radius) var(--cbx-sheet-push-border-radius) 0 0;
+    overflow: hidden;
+    .view,
+    .page {
+      --cbx-safe-area-top: 0px;
+    }
+    &.sheet-modal-top {
+      border-radius: 0 0 var(--cbx-sheet-push-border-radius) var(--cbx-sheet-push-border-radius);
+    }
+  }
+  .xui-root {
+    background: #000;
+    > .views,
+    > .view {
+      transition-duration: var(--cbx-sheet-transition-duration);
+    }
+  }
+  .if-dark-theme({
+    &.dark .xui-root > .views,
+    &.dark .xui-root > .view,
+    .dark .xui-root > .views,
+    .dark .xui-root > .view,
+    .dark.xui-root > .views,
+    .dark.xui-root > .view,
+    .xui-root > .views.dark,
+    .xui-root > .view.dark {
+      &:after {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.1);
+        z-index: 13000;
+        border-radius: var(--cbx-sheet-push-border-radius) var(--cbx-sheet-push-border-radius) 0 0;
+        opacity: 1;
+        animation: sheet-dark-push-overlay-fade-in var(--cbx-sheet-transition-duration) forwards;
+      }
+    }
+  });
+}
+html.with-modal-sheet-push {
+  .xui-root {
+    > .views,
+    > .view {
+      border-radius: var(--cbx-sheet-push-border-radius);
+      transform: translate3d(0, 0, 0px) scale(var(--cbx-sheet-push-scale, 1)) !important;
+    }
+  }
+}
+
+.if-dark-theme({
+  html.with-modal-sheet-push-closing {
+    &.dark .xui-root > .views,
+    &.dark .xui-root > .view,
+    .dark .xui-root > .views,
+    .dark .xui-root > .view,
+    .dark.xui-root > .views,
+    .dark.xui-root > .view,
+    .xui-root > .views.dark,
+    .xui-root > .view.dark {
+      &:after {
+        animation: sheet-dark-push-overlay-fade-out var(--cbx-sheet-transition-duration) forwards;
+      }
+    }
+  }
+
+  @keyframes sheet-dark-push-overlay-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes sheet-dark-push-overlay-fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+});
+
+.if-ios-theme({
+  @import './sheet-ios.less';
+});
+.if-md-theme({
+  @import './sheet-md.less';
+});
+.if-aurora-theme({
+  @import './sheet-aurora.less';
+});

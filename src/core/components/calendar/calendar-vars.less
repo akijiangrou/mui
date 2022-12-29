@@ -1,0 +1,122 @@
+:root {
+  --cbx-calendar-height: 340px;
+  --cbx-calendar-sheet-landscape-height: 220px;
+  --cbx-calendar-popover-width: 320px;
+  --cbx-calendar-popover-height: 320px;
+  --cbx-calendar-modal-height: 420px;
+  --cbx-calendar-modal-max-width: 380px;
+  --cbx-calendar-modal-border-radius: 4px;
+  /*
+  --cbx-calendar-header-bg-color: var(--cbx-bars-bg-color);
+  --cbx-calendar-header-link-color: var(--cbx-bars-link-color);
+  --cbx-calendar-header-text-color: var(--cbx-bars-text-color);
+  --cbx-calendar-footer-bg-color: var(--cbx-bars-bg-color);
+  --cbx-calendar-footer-border-color: var(--cbx-bars-border-color);
+  --cbx-calendar-footer-link-color: var(--cbx-bars-link-color);
+  --cbx-calendar-footer-text-color: var(--cbx-bars-text-color);
+  */
+  --cbx-calendar-week-header-bg-color: transparent;
+  --cbx-calendar-footer-padding: 0 8px;
+  --cbx-calendar-week-header-font-size: 11px;
+  --cbx-calendar-selected-text-color: #fff;
+  /*
+  --cbx-calendar-selected-bg-color:  var(--cbx-theme-color);
+  */
+  --cbx-calendar-disabled-text-color: #d4d4d4;
+  --cbx-calendar-event-dot-size: 4px;
+  /*
+  --cbx-calendar-event-bg-color: var(--cbx-theme-color);
+  */
+  /*
+  --cbx-calendar-picker-selected-text-color: var(--cbx-theme-color);
+  */
+  --cbx-calendar-time-selector-height: 28px;
+  .light-vars({
+    --cbx-calendar-week-header-text-color: #5e5e5e;
+    --cbx-calendar-prev-next-text-color: #c8c8c8;
+    --cbx-calendar-day-text-color:  #000;
+    --cbx-calendar-sheet-bg-color: #fff;
+    --cbx-calendar-modal-bg-color: #fff;
+    --cbx-calendar-picker-pressed-bg-color: rgba(0,0,0,0.1);
+    --cbx-calendar-picker-hover-bg-color: rgba(0,0,0,0.03);
+    --cbx-calendar-time-selector-bg-color: rgba(0,0,0,0.05);
+  });
+  .dark-vars({
+    --cbx-calendar-week-header-text-color: #aaa;
+    --cbx-calendar-prev-next-text-color: #5e5e5e;
+    --cbx-calendar-sheet-border-color: var(--cbx-bars-border-color);
+    --cbx-calendar-modal-bg-color: #121212;
+    --cbx-calendar-sheet-bg-color: #121212;
+    --cbx-calendar-picker-pressed-bg-color: rgba(255,255,255,0.08);
+    --cbx-calendar-picker-hover-bg-color: rgba(255,255,255,0.03);
+    --cbx-calendar-time-selector-bg-color: rgba(255,255,255,0.1);
+  });
+}
+.ios-vars({
+  --cbx-calendar-sheet-border-color: #929499;
+  --cbx-calendar-header-height: 44px;
+  --cbx-calendar-header-font-size: 17px;
+  --cbx-calendar-header-font-weight: 600;
+  --cbx-calendar-header-padding: 0 8px;
+  --cbx-calendar-footer-height: 44px;
+  --cbx-calendar-footer-font-size: 17px;
+  --cbx-calendar-week-header-height: 18px;
+  --cbx-calendar-day-font-size: 15px;
+  --cbx-calendar-day-size: 30px;
+  --cbx-calendar-picker-font-size: 17px;
+  --cbx-calendar-time-selector-font-size: 17px;
+  .light-vars({
+    --cbx-calendar-today-text-color: #000;
+    --cbx-calendar-today-bg-color: #e3e3e3;
+  });
+  .dark-vars({
+    --cbx-calendar-day-text-color: #fff;
+    --cbx-calendar-today-text-color: #fff;
+    --cbx-calendar-today-bg-color: #333;
+  });
+});
+.md-vars({
+  --cbx-calendar-sheet-border-color: #ccc;
+  --cbx-calendar-header-height: 56px;
+  --cbx-calendar-header-font-size: 20px;
+  --cbx-calendar-header-font-weight: 400;
+  --cbx-calendar-header-padding: 0 24px;
+  --cbx-calendar-footer-height: 48px;
+  --cbx-calendar-footer-font-size: 14px;
+  --cbx-calendar-week-header-height: 24px;
+  --cbx-calendar-day-font-size: 14px;
+  /*
+  --cbx-calendar-today-text-color: var(--cbx-theme-color);
+  */
+  --cbx-calendar-today-bg-color: none;
+  --cbx-calendar-day-size: 32px;
+  --cbx-calendar-picker-font-size: 14px;
+  --cbx-calendar-time-selector-font-size: 14px;
+  .dark-vars({
+    --cbx-calendar-day-text-color: rgba(255,255,255,0.87);
+  });
+});
+.aurora-vars({
+  --cbx-calendar-sheet-border-color: #ccc;
+  --cbx-calendar-header-height: 56px;
+  --cbx-calendar-header-font-size: 18px;
+  --cbx-calendar-header-font-weight: 600;
+  --cbx-calendar-header-padding: 0 16px;
+  --cbx-calendar-footer-height: 48px;
+  --cbx-calendar-footer-font-size: 14px;
+  --cbx-calendar-footer-padding: 0 16px;
+  --cbx-calendar-week-header-height: 24px;
+  --cbx-calendar-day-font-size: 14px;
+  --cbx-calendar-day-size: 32px;
+  --cbx-calendar-picker-font-size: 16px;
+  --cbx-calendar-time-selector-font-size: 14px;
+  .light-vars({
+    --cbx-calendar-today-text-color: #000;
+    --cbx-calendar-today-bg-color: #e3e3e3;
+  });
+  .dark-vars({
+    --cbx-calendar-day-text-color: #fff;
+    --cbx-calendar-today-text-color: #fff;
+    --cbx-calendar-today-bg-color: #333;
+  });
+});

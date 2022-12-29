@@ -1,0 +1,41 @@
+:root {
+  --cbx-treeview-item-height: 34px;
+  --cbx-treeview-item-padding-left: 16px;
+  --cbx-treeview-item-padding-right: 16px;
+  --cbx-treeview-toggle-size: 24px;
+  --cbx-treeview-children-offset: 29px;
+  --cbx-treeview-label-font-weight: 400;
+  --cbx-treeview-label-text-color: inherit;
+  --cbx-treeview-icon-size: 24px;
+
+  /*
+  --cbx-treeview-selectable-selected-bg-color: rgba(var(--cbx-theme-color-rgb), 0.2);
+  */
+  .light-vars({
+    --cbx-treeview-toggle-color: rgba(0,0,0,0.5);
+    --cbx-treeview-toggle-hover-bg-color: rgba(0,0,0,0.1);
+    --cbx-treeview-toggle-pressed-bg-color: rgba(0,0,0,0.15);
+    --cbx-treeview-icon-color: rgba(0,0,0,0.5);
+    --cbx-treeview-selectable-hover-bg-color: rgba(0,0,0,0.1);
+    --cbx-treeview-link-hover-bg-color: rgba(0,0,0,0.1);
+    --cbx-treeview-link-pressed-bg-color: rgba(0,0,0,0.15);
+  });
+  .dark-vars({
+    --cbx-treeview-toggle-color: rgba(255,255,255,0.5);
+    --cbx-treeview-toggle-hover-bg-color: rgba(255,255,255,0.03);
+    --cbx-treeview-toggle-pressed-bg-color: rgba(255,255,255,0.1);
+    --cbx-treeview-icon-color: rgba(255,255,255,0.75);
+    --cbx-treeview-selectable-hover-bg-color: rgba(255,255,255,0.03);
+    --cbx-treeview-link-hover-bg-color: rgba(255,255,255,0.03);
+    --cbx-treeview-link-pressed-bg-color: rgba(255,255,255,0.11);
+  });
+}
+.ios-vars({
+  --cbx-treeview-label-font-size: 17px;
+});
+.md-vars({
+  --cbx-treeview-label-font-size: 16px;
+});
+.aurora-vars({
+  --cbx-treeview-label-font-size: 16px;
+});

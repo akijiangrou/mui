@@ -1,0 +1,13 @@
+{
+  "name": "xui",
+  "private": true,
+  "main": "xui.esm.js",
+  "module": "xui.esm.js",
+  "jsnext:main": "xui.esm.js",
+  "typings": "xui.d.ts",
+  "sideEffects": [
+    "*.less",
+    "*.css",
+    "shared/dom7.js"
+  ]
+}

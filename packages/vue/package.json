@@ -1,0 +1,51 @@
+{
+  "name": "xui-vue",
+  "version": "1.0.0",
+  "description": "Build full featured iOS & Android apps using Xui & Vue",
+  "type": "module",
+  "exports": {
+    ".": "./xui-vue.js",
+    "./bundle": "./xui-vue-bundle.js",
+    "./components/*": "./components/*",
+    "./shared/*": "./shared/*"
+  },
+  "typings": "xui-vue.d.ts",
+  "typesVersions": {
+    "*": {
+      "bundle": [
+        "xui-vue-bundle.d.ts"
+      ]
+    }
+  },
+  "web-types": "xui-vue-web-types.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuiio/xui.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "mobile",
+    "framework",
+    "xui",
+    "cordova",
+    "ios",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "capacitor",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "xui",
+    "material",
+    "android",
+    "google",
+    "googleplay"
+  ],
+  "author": "zhangchunxiao",
+  "license": "MIT",
+  "homepage": "https://xui.io/vue/"
+}

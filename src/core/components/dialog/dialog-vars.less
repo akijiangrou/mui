@@ -1,0 +1,143 @@
+:root {
+  --cbx-dialog-button-text-color: var(--cbx-theme-color);
+  --cbx-dialog-button-text-align: center;
+  .light-vars({
+    --cbx-dialog-input-bg-color:  #fff;
+  });
+  .dark-vars({
+    --cbx-dialog-text-color: #fff;
+  });
+}
+.ios-vars({
+  --cbx-dialog-box-shadow: none;
+  --cbx-dialog-width: 270px;
+  --cbx-dialog-inner-padding: 16px;
+  --cbx-dialog-border-radius: 13px;
+  --cbx-dialog-text-align: center;
+  --cbx-dialog-font-size: 14px;
+  --cbx-dialog-title-text-color: inherit;
+  --cbx-dialog-title-font-size: 18px;
+  --cbx-dialog-title-font-weight: 600;
+  --cbx-dialog-title-line-height: inherit;
+
+  --cbx-dialog-button-font-size: 17px;
+  --cbx-dialog-button-height: 44px;
+  --cbx-dialog-button-letter-spacing: 0;
+  --cbx-dialog-button-font-weight: 400;
+  --cbx-dialog-button-text-transform: none;
+
+  --cbx-dialog-input-border-radius: 4px;
+  --cbx-dialog-input-font-size: 14px;
+  --cbx-dialog-input-height: 32px;
+  --cbx-dialog-input-border-width: 1px;
+  --cbx-dialog-input-placeholder-color: #a9a9a9;
+
+  --cbx-dialog-preloader-size: 34px;
+
+  .light-vars({
+    --cbx-dialog-bg-color: rgba(255,255,255,0.95);
+    --cbx-dialog-bg-color-rgb: 255, 255, 255;
+    --cbx-dialog-text-color: #000;
+    --cbx-dialog-button-pressed-bg-color: rgba(0,0,0,0.1);
+    --cbx-dialog-input-border-color: rgba(0,0,0,0.3);
+    --cbx-dialog-border-divider-color: rgba(0,0,0,0.2);
+  });
+  .dark-vars({
+    --cbx-dialog-bg-color: rgba(45,45,45,0.95);
+    --cbx-dialog-bg-color-rgb: 45, 45, 45;
+    --cbx-dialog-button-pressed-bg-color: rgba(0,0,0,0.2);
+    --cbx-dialog-border-divider-color: rgba(255,255,255,0.15);
+    --cbx-dialog-input-border-color: rgba(255,255,255,0.15);
+    --cbx-dialog-input-bg-color: rgba(0,0,0,0.5);
+  });
+});
+.md-vars({
+  --cbx-dialog-box-shadow: var(--cbx-elevation-24);
+  --cbx-dialog-width: 280px;
+  --cbx-dialog-inner-padding: 24px;
+  --cbx-dialog-border-radius: 4px;
+  .ltr({
+    --cbx-dialog-text-align: left;
+  });
+  .rtl({
+    --cbx-dialog-text-align: right;
+  });
+  --cbx-dialog-font-size: 16px;
+  --cbx-dialog-title-font-size: 20px;
+  --cbx-dialog-title-font-weight: 500;
+  --cbx-dialog-title-line-height: 1.3;
+
+  --cbx-dialog-button-font-size: 14px;
+  --cbx-dialog-button-height: 36px;
+  --cbx-dialog-button-letter-spacing: 0.05em;
+  --cbx-dialog-button-font-weight: 500;
+  --cbx-dialog-button-text-transform: uppercase;
+  --cbx-dialog-button-pressed-bg-color: rgba(var(--cbx-theme-color-rgb), 0.15);
+
+  --cbx-dialog-input-border-radius: 0px;
+  --cbx-dialog-input-font-size: 16px;
+  --cbx-dialog-input-height: 36px;
+  --cbx-dialog-input-border-color: transparent;
+  --cbx-dialog-input-border-width: 0px;
+
+  --cbx-dialog-preloader-size: 32px;
+  .light-vars({
+    --cbx-dialog-bg-color: #fff;
+    --cbx-dialog-text-color: rgba(0,0,0,0.54);
+    --cbx-dialog-title-text-color: #212121;
+    --cbx-dialog-input-placeholder-color: rgba(0,0,0,0.35);
+  });
+  .dark-vars({
+    --cbx-dialog-bg-color: #1c1c1d;
+    --cbx-dialog-title-text-color: #fff;
+    --cbx-dialog-input-bg-color: transparent;
+    --cbx-dialog-input-placeholder-color: rgba(255,255,255,0.54);
+  });
+
+});
+.aurora-vars({
+  --cbx-dialog-box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
+  --cbx-dialog-width: 300px;
+  --cbx-dialog-inner-padding: 20px;
+  --cbx-dialog-border-radius: 8px;
+  .ltr({
+    --cbx-dialog-text-align: left;
+  });
+  .rtl({
+    --cbx-dialog-text-align: right;
+  });
+  --cbx-dialog-font-size: 14px;
+  --cbx-dialog-title-font-size: 18px;
+  --cbx-dialog-title-font-weight: 700;
+  --cbx-dialog-title-line-height: inherit;
+
+  --cbx-dialog-button-font-size: 14px;
+  --cbx-dialog-button-height: 36px;
+  --cbx-dialog-button-letter-spacing: 0;
+  --cbx-dialog-button-font-weight: 600;
+  --cbx-dialog-button-text-transform: uppercase;
+  /*
+  --cbx-dialog-button-pressed-bg-color: var(--cbx-theme-color-shade);
+  --cbx-dialog-button-hover-bg-color: var(--cbx-theme-color-tint);
+  */
+  --cbx-dialog-input-border-radius: 8px;
+  --cbx-dialog-input-font-size: 16px;
+  --cbx-dialog-input-height: 32px;
+  --cbx-dialog-input-border-width: 1px;
+  --cbx-dialog-preloader-size: 24px;
+  .light-vars({
+    --cbx-dialog-bg-color: #fff;
+    --cbx-dialog-title-text-color: inherit;
+    --cbx-dialog-text-color: #000;
+    --cbx-dialog-button-text-color: #fff;
+    --cbx-dialog-input-border-color: rgba(0,0,0,0.2);
+    --cbx-dialog-input-placeholder-color: rgba(0,0,0,0.32);
+  });
+  .dark-vars({
+    --cbx-dialog-bg-color: #1c1c1d;
+    --cbx-dialog-title-text-color: #fff;
+    --cbx-dialog-input-bg-color: rgba(0,0,0,0.25);
+    --cbx-dialog-input-placeholder-color: rgba(255,255,255,0.54);
+    --cbx-dialog-input-border-color: rgba(255,255,255,0.15);
+  });
+});

@@ -1,0 +1,32 @@
+:root {
+  --cbx-login-screen-blocks-max-width: 480px;
+  /*
+   --cbx-login-screen-list-button-text-color: var(--cbx-theme-color);
+   */
+  --cbx-login-screen-title-text-align: center;
+  --cbx-login-screen-title-text-color: inherit;
+  --cbx-login-screen-title-letter-spacing: 0;
+  --cbx-login-screen-title-font-weight: 600;
+  --cbx-login-screen-title-font-size: 28px;
+  .light-vars({
+    --cbx-login-screen-content-bg-color: #fff;
+    --cbx-login-screen-bg-color: #fff;
+  });
+  .dark-vars({
+    --cbx-login-screen-bg-color: #121212;
+    --cbx-login-screen-content-bg-color: #121212;
+  });
+}
+.ios-vars({
+  --cbx-login-screen-blocks-margin-vertical: 25px;
+  .dark-vars({
+    --cbx-login-screen-bg-color: #000;
+    --cbx-login-screen-content-bg-color: #000;
+  });
+});
+.md-vars({
+  --cbx-login-screen-blocks-margin-vertical: 24px;
+});
+.aurora-vars({
+  --cbx-login-screen-blocks-margin-vertical: 16px;
+});

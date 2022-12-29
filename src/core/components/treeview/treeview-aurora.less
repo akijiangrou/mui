@@ -1,0 +1,31 @@
+.aurora {
+  .treeview-toggle {
+    &:hover {
+      background-color: var(--cbx-treeview-toggle-hover-bg-color);
+    }
+    &.active-state {
+      background-color: var(--cbx-treeview-toggle-pressed-bg-color);
+    }
+  }
+  .treeview-item-selectable > .treeview-item-root,
+  .treeview-item-selectable.treeview-item-root {
+    &:hover {
+      background: var(--cbx-treeview-selectable-hover-bg-color);
+    }
+  }
+  a.treeview-item-root {
+    &:hover {
+      background: var(--cbx-treeview-link-hover-bg-color);
+    }
+    &.active-state {
+      background: var(--cbx-treeview-link-pressed-bg-color);
+    }
+  }
+  .treeview-item-selected > .treeview-item-root:hover,
+  .treeview-item-selected.treeview-item-root:hover {
+    background: var(
+      --cbx-treeview-selectable-selected-bg-color,
+      rgba(var(--cbx-theme-color-rgb), 0.2)
+    );
+  }
+}

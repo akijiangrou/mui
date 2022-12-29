@@ -1,0 +1,129 @@
+:root {
+  --cbx-input-bg-color: transparent;
+  --cbx-label-font-weight: 400;
+  --cbx-label-line-height: 1.3;
+  --cbx-input-padding-left: 0px;
+  --cbx-input-padding-right: 0px;
+  --cbx-input-error-text-color: #ff3b30;
+  --cbx-input-error-font-size: 12px;
+  --cbx-input-error-line-height: 1.4;
+  --cbx-input-error-font-weight: 400;
+  --cbx-input-info-font-size: 12px;
+  --cbx-input-info-line-height: 1.4;
+  --cbx-input-outline-height: 40px;
+
+  --cbx-input-outline-border-radius: 4px;
+  --cbx-input-outline-padding-horizontal: 12px;
+  --cbx-textarea-height: 100px;
+  /*
+  --cbx-input-outline-focused-border-color: var(--cbx-theme-color);
+  --cbx-input-outline-invalid-border-color: var(--cbx-input-error-text-color);
+  */
+  .light-vars({
+    --cbx-input-outline-border-color: #bbb;
+  });
+  .dark-vars({
+    --cbx-input-outline-border-color: #444;
+  });
+}
+.ios-vars({
+  --cbx-input-height: 44px;
+  --cbx-input-font-size: 17px;
+  --cbx-input-placeholder-color: #a9a9a9;
+  --cbx-textarea-padding-vertical: 11px;
+
+  /*
+  --cbx-input-focused-border-color: var(--cbx-list-item-border-color);
+  --cbx-input-invalid-border-color: var(--cbx-list-item-border-color);
+  --cbx-input-invalid-text-color: var(--cbx-input-error-text-color);
+  */
+  --cbx-label-font-size: 12px;
+  --cbx-label-text-color: inherit;
+  /*
+  --cbx-label-focused-text-color: var(--cbx-label-text-color);
+  --cbx-label-invalid-text-color: var(--cbx-label-text-color);
+  */
+  --cbx-floating-label-scale: calc(17 / 12);
+  --cbx-inline-label-font-size: 17px;
+  --cbx-inline-label-line-height: 1.4;
+  --cbx-inline-label-padding-top: 3px;
+  --cbx-input-clear-button-size: 14px;
+  .light-vars({
+    --cbx-input-text-color: #000000;
+    --cbx-input-info-text-color: rgba(0,0,0,0.45);
+    --cbx-input-clear-button-color: rgba(0,0,0,0.45);
+  });
+  .dark-vars({
+    --cbx-input-text-color: #fff;
+    --cbx-input-info-text-color: rgba(255,255,255,0.55);
+    --cbx-input-clear-button-color: rgba(255,255,255,0.5);
+  });
+});
+.md-vars({
+  --cbx-input-height: 36px;
+  --cbx-input-font-size: 16px;
+  --cbx-textarea-padding-vertical: 7px;
+  /*
+  --cbx-input-focused-border-color: var(--cbx-theme-color);
+  --cbx-input-invalid-border-color: var(--cbx-input-error-text-color);
+  --cbx-input-invalid-text-color: var(--cbx-input-text-color);
+  */
+  --cbx-label-font-size: 12px;
+  /*
+  --cbx-label-focused-text-color: var(--cbx-theme-color);
+  --cbx-label-invalid-text-color: var(--cbx-input-error-text-color );
+  */
+  --cbx-floating-label-scale: calc(16 / 12);
+  --cbx-inline-label-font-size: 16px;
+  --cbx-inline-label-line-height: 1.5;
+  --cbx-inline-label-padding-top: 7px;
+  --cbx-input-clear-button-size: 18px;
+  --cbx-input-clear-button-color: #aaa;
+  .light-vars({
+    --cbx-input-text-color: #212121;
+    --cbx-input-placeholder-color: rgba(0,0,0,0.35);
+    --cbx-label-text-color: rgba(0,0,0,.65);
+    --cbx-input-info-text-color: rgba(0,0,0,.45);
+
+  });
+  .dark-vars({
+    --cbx-input-text-color: rgba(255,255,255,0.87);
+    --cbx-input-placeholder-color: rgba(255,255,255,.35);
+    --cbx-label-text-color: rgba(255,255,255,.54);
+    --cbx-input-info-text-color: rgba(255,255,255,.45);
+  });
+});
+.aurora-vars({
+  --cbx-input-height: 32px;
+  --cbx-input-font-size: 16px;
+  --cbx-textarea-padding-vertical: 4px;
+  /*
+  --cbx-input-focused-border-color: var(--cbx-theme-color);
+  --cbx-input-invalid-border-color: var(--cbx-input-error-text-color);
+  --cbx-input-invalid-text-color: var(--cbx-input-text-color);
+  */
+  --cbx-label-font-size: 12px;
+  --cbx-label-text-color: inherit;
+  /*
+  --cbx-label-focused-text-color: var(--cbx-theme-color);
+  --cbx-label-invalid-text-color: var(--cbx-input-error-text-color );
+  */
+  --cbx-floating-label-scale: calc(16 / 12);
+  --cbx-inline-label-font-size: 16px;
+  --cbx-inline-label-line-height: 1.5;
+  --cbx-inline-label-padding-top: 4px;
+  --cbx-input-clear-button-size: 14px;
+  --cbx-input-outline-border-radius: 8px;
+  .light-vars({
+    --cbx-input-text-color: #000000;
+    --cbx-input-placeholder-color: rgba(0,0,0,0.32);
+    --cbx-input-clear-button-color: rgba(0,0,0,0.45);
+    --cbx-input-info-text-color: rgba(0,0,0,0.5);
+  });
+  .dark-vars({
+    --cbx-input-text-color: #fff;
+    --cbx-input-clear-button-color: rgba(255,255,255,.5);
+    --cbx-input-placeholder-color: rgba(255,255,255,.35);
+    --cbx-input-info-text-color: rgba(255,255,255,0.45);
+  });
+});

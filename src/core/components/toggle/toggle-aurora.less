@@ -1,0 +1,26 @@
+.aurora {
+  .toggle {
+    input[type='checkbox']:checked + .toggle-icon {
+      background: var(--cbx-toggle-active-color, var(--cbx-theme-color));
+      &:after {
+        .ltr({
+          transform: translateX(calc(var(--cbx-toggle-width) - var(--cbx-toggle-height)));
+        });
+        .rtl({
+          transform: translateX(calc(-1 * (var(--cbx-toggle-width) - var(--cbx-toggle-height))));
+        });
+      }
+    }
+  }
+  .toggle-icon {
+    background: var(--cbx-toggle-inactive-color);
+    &:after {
+      height: calc(var(--cbx-toggle-height) - 4px);
+      width: calc(var(--cbx-toggle-height) - 4px);
+      top: 2px;
+      .ltr({ left: 2px; });
+      .rtl({ right: 2px; });
+      border-radius: calc(var(--cbx-toggle-height) - 4px);
+    }
+  }
+}

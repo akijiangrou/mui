@@ -1,0 +1,6 @@
+{
+  "name": "xui-vue",
+  "private": true,
+  "module": "xui-vue.js",
+  "typings": "xui-vue.d.ts"
+}

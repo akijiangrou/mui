@@ -1,0 +1,44 @@
+// fade
+.router-transition-cbx-fade-forward,
+.router-transition-cbx-fade-backward {
+  background: var(--cbx-page-bg-color);
+}
+.router-transition-cbx-fade-forward {
+  .page-next {
+    opacity: 0 !important;
+    animation: cbx-fade-in var(--cbx-page-fade-transition-duration) forwards;
+  }
+  .page-current {
+    animation: cbx-fade-out var(--cbx-page-fade-transition-duration) forwards;
+  }
+}
+.router-transition-cbx-fade-backward {
+  .page-current {
+    animation: cbx-fade-out var(--cbx-page-fade-transition-duration) forwards;
+  }
+  .page-previous {
+    animation: cbx-fade-in var(--cbx-page-fade-transition-duration) forwards;
+  }
+}
+@keyframes cbx-fade-in {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes cbx-fade-out {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}

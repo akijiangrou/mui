@@ -1,0 +1,31 @@
+:root {
+  /*
+  --cbx-radio-active-color: var(--cbx-theme-color);
+  */
+  --cbx-radio-border-radius: 50%;
+  --cbx-radio-extra-margin: 0px;
+  .dark-vars({
+    --cbx-radio-inactive-color: rgba(255, 255, 255, 0.3);
+  });
+}
+.ios-vars({
+  --cbx-radio-size: 22px;
+  --cbx-radio-border-width: 1px;
+  .light-vars({
+    --cbx-radio-inactive-color: #c7c7cc;
+  })
+});
+.md-vars({
+  --cbx-radio-size: 20px;
+  --cbx-radio-border-width: 2px;
+  .light-vars({
+    --cbx-radio-inactive-color: #6d6d6d;
+  })
+});
+.aurora-vars({
+  --cbx-radio-size: 16px;
+  --cbx-radio-border-width: 1px;
+  .light-vars({
+    --cbx-radio-inactive-color: rgba(0,0,0,0.25);
+  })
+});
